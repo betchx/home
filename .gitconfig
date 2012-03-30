@@ -3,10 +3,10 @@
 [guitool "Reset/file"]
 	cmd = git checkout $FILENAME
 	needsfile = yes
-[guitool "Add Selected file to .gitignore"]
+[guitool "ignore/file"]
 	cmd = echo $FILENAME >> .gitignore
 	needsfile = yes
-[guitool "add text into .gitignore"]
+[guitool "ignore/string"]
 	cmd = echo \"$ARGS\" | tee -a  .gitignore
 	argprompt = yes
 [guitool "set_file_encoding"]
