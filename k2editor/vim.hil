@@ -1,0 +1,15 @@
+VERSION=1.4
+17,1,0,0,0,0,setlocal
+17,1,0,0,0,0,exists
+17,1,0,0,0,0,let
+19,0,0,0,1,0,(else|end)?if
+20,0,0,0,1,0,[a-z]:[a-z][a-z0-9_]*
+19,1,0,0,0,0,else
+Quotation="'
+Canceler=\
+Commenter="[^"]*$
+CommenterRegExp=1
+CommenterCase=0
+CommenterWord=0
+CommenterFuzz=0
+BracketCount=0
