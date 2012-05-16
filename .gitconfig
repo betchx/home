@@ -73,3 +73,6 @@
 	cmd = echo \"$FILENAME encoding=$ARGS\" >> .git/info/attributes
 	needsfile = yes
 	argprompt = yes
+[guitool "exclude/directory"]
+	cmd = dirname \"$FILENAME\"/ >> .git/info/exclude
+	needsfile = yes
