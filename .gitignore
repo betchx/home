@@ -16,3 +16,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+
+#  Vim files
+*~
+*.swp
