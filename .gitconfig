@@ -17,7 +17,7 @@
 	needsfile = yes
 [guitool "exclude/cancel-last"]
 	cmd = tail -1 .git/info/exclude | sed s/^/!/ >> .git/info/exclude
-[guitool "encoding/file/default"]
+[guitool "encoding/file/cp932"]
 	cmd = echo \"$FILENAME encoding=cp932\" >> .gitattributes
 	needsfile = yes
 [guitool "encoding/file/sjis"]
@@ -45,7 +45,7 @@
 	cmd = echo $FILENAME encoding=$ARGS >> .gitattributes
 	needsfile = yes
 	argprompt = yes
-[guitool "encoding-local/file/default"]
+[guitool "encoding-local/file/cp932"]
 	cmd = echo \"$FILENAME encoding=cp932\" >> .git/info/attributes
 	needsfile = yes
 [guitool "encoding-local/file/sjis"]
@@ -57,7 +57,7 @@
 [guitool "encoding-local/file/euc"]
 	cmd = echo \"$FILENAME encoding=euc-JP\" >> .git/info/attributes
 	needsfile = yes
-[guitool "encoding-local/string/default"]
+[guitool "encoding-local/string/cp932"]
 	cmd = echo \"$ARGS encoding=cp932\" >> .git/info/attributes
 	argprompt = yes
 [guitool "encoding-local/string/sjis"]
