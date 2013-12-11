@@ -9,10 +9,6 @@
 [guitool "ignore/string"]
 	cmd = echo \"$ARGS\" | tee -a  .gitignore
 	argprompt = yes
-[guitool "set_file_encoding"]
-	cmd = echo $FILENAME encoding=$ARGS >> .gitattributes
-	needsfile = yes
-	argprompt = yes
 [guitool "exclude/string"]
 	cmd = echo \"$ARGS\" >> .git/info/exclude
 	argprompt = yes
@@ -43,6 +39,10 @@
 [guitool "encoding/string/euc"]
 	cmd = echo \"$ARGS encoding=euc-JP\" >> .gitattributes
 	argprompt = yes
+[guitool "encoding/file/any"]
+	cmd = echo $FILENAME encoding=$ARGS >> .gitattributes
+	needsfile = yes
+	argprompt = yes
 [guitool "encoding-local/file/default"]
 	cmd = echo \"$FILENAME encoding=cp932\" >> .git/info/attributes
 	needsfile = yes
@@ -66,4 +66,8 @@
 	argprompt = yes
 [guitool "encoding-local/string/euc"]
 	cmd = echo \"$ARGS encoding=euc-JP\" >> .git/info/attributes
+	argprompt = yes
+[guitool "encoding-local/file/any"]
+	cmd = echo \"$FILENAME encoding=$ARGS\" >> .git/info/attributes
+	needsfile = yes
 	argprompt = yes
