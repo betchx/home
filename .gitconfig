@@ -1,6 +1,6 @@
 [core]
 	quotepath = false
-[guitool "Reset"]
+[guitool "Reset/file"]
 	cmd = git checkout $FILENAME
 	needsfile = yes
 [guitool "Add Selected file to .gitignore"]
