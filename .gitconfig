@@ -76,3 +76,9 @@
 [guitool "exclude/directory"]
 	cmd = dirname \"$FILENAME\"/ >> .git/info/exclude
 	needsfile = yes
+############################
+###LOCAL SETTING START######
+############################
+#
+# Local Setting inserted here
+#
