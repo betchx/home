@@ -83,8 +83,6 @@
 # Local Setting inserted here
 #
 ##  OCV100014 ##
-[core]
-        excludesfile = d:/DATA/TanabeTEmpBAckup/Personal/home/gitignore.txt
 [user]
 	email = tanabe.atsushi@nikken.jp
 	name = TANABE Atsushi
